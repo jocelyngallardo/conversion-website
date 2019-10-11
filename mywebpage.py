@@ -7,7 +7,7 @@ def render_colors():
     return render_template('colors.html')
 
 @app.route("/money")
-def render_page1():
+def render_money():
     return render_template('money.html')
 
 @app.route("/measurements")
