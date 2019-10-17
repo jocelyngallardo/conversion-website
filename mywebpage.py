@@ -22,16 +22,16 @@ def render_measurements():
 if __name__=="__colors__":
     app.run(debug=False)
 
-def returnColor(english)
-    if english = "red"
+def returnColor(english):
+    if english = "red":
         return "rojo"
-    if english = "orange"
+    if english = "orange":
         return "naranja"
-    if english = "yellow"
+    if english = "yellow":
         return "amarillo"
-    if english = "green"
+    if english = "green":
         return "verde"
-    if english = "blue"
+    if english = "blue":
         return "azul"
-    if english = "purple"
+    if english = "purple":
         return "morado"
