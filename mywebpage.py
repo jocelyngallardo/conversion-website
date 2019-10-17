@@ -15,6 +15,10 @@ def render_response():
 def render_money():
     return render_template('money.html')
 
+@app.route("/response")
+def render_response():
+    return render_template('response.html', responseFromServer = response)
+
 @app.route("/measurements")
 def render_measurements():
     return render_template('measurements.html')
