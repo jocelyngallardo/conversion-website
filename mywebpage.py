@@ -7,7 +7,7 @@ def render_main():
     return render_template('colors.html')
 
 @app.route("/colors")
-def render_colors():
+def render_response():
     response = returnColor(resquest.args['color'])
     return render_template('response.html', responseFromServer = response)
 
