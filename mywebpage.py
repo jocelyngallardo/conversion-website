@@ -8,7 +8,7 @@ def render_main():
 
 @app.route("/colors")
 def render_colors():
-    response = returnColor
+    response = returnColor('color', 'response')
     return render_template('response.html', responseFromServer = response)
 
 @app.route("/money")
