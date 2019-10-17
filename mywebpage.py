@@ -24,14 +24,14 @@ if __name__=="__colors__":
 
 def returnColor(english):
     if english == "red":
-        return "rojo"
+        return "Rojo"
     if english == "orange":
-        return "naranja"
+        return "Naranja"
     if english == "yellow":
-        return "amarillo"
+        return "Amarillo"
     if english == "green":
-        return "verde"
+        return "Verde"
     if english == "blue":
-        return "azul"
+        return "Azul"
     if english == "purple":
-        return "morado"
+        return "Morado"
