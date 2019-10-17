@@ -6,12 +6,12 @@
 
 {% block content %}
     <h1>Colors</h1>
-<select name="colors" size="6" multiple>
-  <option value="red">Red</option>
-  <option value="orange">Orange</option>
-  <option value="yellow">Yellow</option>
-  <option value="green">Green</option>
-  <option value="blue">Blue</option>
-  <option value="purple">Purple</option>
-</select>
+<form>
+  <input type="radio" name="color" value="red" checked> Red<br>
+  <input type="radio" name="color" value="orange"> Orange<br>
+  <input type="radio" name="color" value="yellow"> Yellow<br>
+  <input type="radio" name="color" value="green"> Green<br>
+  <input type="radio" name="color" value="blue"> Blue<br>
+  <input type="radio" name="color" value="purple"> Purple<br>
+</form>
 {% endblock %}
