@@ -8,7 +8,7 @@ def render_main():
 
 @app.route("/colors")
 def render_colors():
-    response = returnColor('color', 'response')
+    response = returnColor(resquest.args['color'])
     return render_template('response.html', responseFromServer = response)
 
 @app.route("/money")
@@ -22,16 +22,16 @@ def render_measurements():
 if __name__=="__colors__":
     app.run(debug=False)
 
-def returnColor(english, spanish)
+def returnColor(english)
     if english = "red"
-        return spanish = "rojo"
+        return "rojo"
     if english = "orange"
-        return spansih = "naranja"
+        return "naranja"
     if english = "yellow"
-        return = "amarillo"
+        return "amarillo"
     if english = "green"
-        return spanish = "verde"
+        return "verde"
     if english = "blue"
-        return spanish = "azul"
+        return "azul"
     if english = "purple"
-        return spanish = "morado"
+        return "morado"
