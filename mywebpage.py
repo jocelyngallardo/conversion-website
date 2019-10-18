@@ -22,6 +22,10 @@ def render_response():
 @app.route("/measurements")
 def render_measurements():
     return render_template('measurements.html')
+
+@app.route("/response")
+def render_response():
+    return render_template('response.html', responseFromServer = response)
     
 if __name__=="__colors__":
     app.run(debug=False)
