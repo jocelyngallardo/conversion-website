@@ -23,10 +23,6 @@ def render_measurements():
 @app.route("/money")
 def render_money():
     return render_template('money.html')
-
-@app.route("/response")
-def render_response():
-    return render_template('response.html', responseFromServer = response)
     
 if __name__=="__colors__":
     app.run(debug=False)
