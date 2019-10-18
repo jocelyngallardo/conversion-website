@@ -23,9 +23,6 @@ def render_measurements():
 @app.route("/money")
 def render_money():
     return render_template('money.html')
-    
-if __name__=="__colors__":
-    app.run(debug=False)
 
 def returnColor(english):
     if english == "red":
@@ -40,3 +37,6 @@ def returnColor(english):
         return "Azul"
     if english == "purple":
         return "Morado"
+        
+if __name__=="__main__":
+    app.run(debug=False)
