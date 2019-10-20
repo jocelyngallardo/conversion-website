@@ -15,7 +15,7 @@ def render_response():
 def render_measurements():
     if "inches" in request.args:
         inches = float(request.args['inches'])
-        response = str( inches * 2.54) + "centimeters"
+        response = str(inches * 2.54) + " centimeters"
         return render_template('response.html', responseFromServer = response)
     else:
         return render_template('measurements.html')
