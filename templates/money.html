@@ -5,7 +5,13 @@
 {% block title %}Money{% endblock %}
 
 {% block content %}
-    <h1>Money</h1>
-Dollars:<br>
-  <input type="text" name="dollars"><br>
+    <h1>Convert Dollars to Euros</h1>
+<form action="/money">
+  Dollars:<br>
+  <input type="text" name="dollars">
+    dollars
+  <br>
+  <input type="submit" value="Convert">
+  <input type="reset" value="Reset">
+</form>
 {% endblock %}
