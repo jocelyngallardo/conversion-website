@@ -22,6 +22,11 @@ def render_measurements():
 
 @app.route("/money")
 def render_money():
+    if "dollars" in request.args:
+        dollars = float(request.args['dollars'])
+        response = str(dollars * 0.9) + " Euros"
+        return render_template('response.html', responseFromServer = response)
+    else:
     return render_template('money.html')
 
 def returnColor(english):
